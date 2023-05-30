@@ -1,0 +1,4 @@
+-> npx parcel index.html
+
+npx: 
+means executing a package
