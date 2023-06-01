@@ -2,3 +2,7 @@
 
 npx: 
 means executing a package
+
+
+parcel: 
+it created a server, hosted our app on it with source file
