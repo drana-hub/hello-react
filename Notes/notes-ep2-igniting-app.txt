@@ -5,4 +5,15 @@ means executing a package
 
 
 parcel: 
+it built a development build for our app
 it created a server, hosted our app on it with source file
+
+
+react: 
+a javascript package(code) hosted on cdn links as well as npm  also
+we dont want to make a network call to cdn link
+
+
+import:
+normal js files do not use import inside it
+require keyword is a node.js backend syntax, cannot be used in front-end files

@@ -1,0 +1,32 @@
+
+Event Bubbling and Capturing in JS:
+
+-> In DOM , first event trickles down , then bubbles up 
+-> if useCapture: true, it counts the event in capture phase, otherwise it takes it in bubbling phase
+
+-> event bubbling and capturing/trickling are the two ways of event propagation in DOM Tree.
+-> netscape wanted capturing to be standard while microsoft wanted bubbling to be the standard
+->event bubbling is used by default if you dont pass true as the 3rd argument
+
+-> bubbling is when clicking on a child but the click is also on all the parents till document
+
+-> generally bubbles move upward bcz they are light
+
+-> when we click on an element in js, first capturing takes place,
+then bubbling takes place
+
+->e.stopPropagtion() stops the event from travelling upwards or downwards 
+
+
+---------------------------------------------------------------------
+Event Delegation in JS:
+-> technique of handling events in a webpage in a better way
+-> event delegation is based on event bubbling.
+-> instead of attaching individual event listeners on children, we try to add it on a parent itself
+
+-> one benefit is memory and performance optimization
+-> one is less code
+-> one is dynamic dom manipulation
+
+-> all the events are not bubbled up like blur, focus, resizing
+but the commn ones like click, keyup and keydown.

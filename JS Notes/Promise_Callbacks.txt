@@ -1,0 +1,60 @@
+Callback : 
+-> we use callbacks to achieve asynchronicity in javascript
+-> async programming in js exists bcz callback exists
+
+Issues with Callbacks:
+
+1. callback hell: when functions keep calling inside one another 
+pyramid of doom
+
+2. Inversion of Control:
+we use control over our code while using callbacks bcz we are dependent on another function to call our function
+what if that function is made by someone else and is not able to call our function properly on time inside it
+
+
+-------------------------------------------------------------
+Before promises , callbacks used to be very crucial for writing asynchronous js
+
+Before:
+
+function createOrder(a, b){
+a.trim();
+b();
+}
+
+
+createOrder(cart, function(){
+console.log('say hello')
+})
+
+After: 
+
+const pro = createOrder(cart)
+As soon as js engine executed the promise line , it returned an empty object with
+{data: undefined },
+
+pro.then(function(){
+console.log('say hello')
+})
+
+
+we resolved inversion of control issue by using promises
+
+Promises: it is nothing but an empty object {}
+def: a placeholder for a certain period of time until we receive a value from asynchronous operation
+def: a container for a future value
+
+orig def: the promise object represents the eventual completion(or failure) of an asynchronous operation and its value.
+
+
+
+after certain point of time this data property of object gets filled
+
+fetch() -> api given by browsers to us to make an external api call and returns a promise
+
+Promise : has 2 things
+1. state of a promise
+2. result of a promise
+
+
+

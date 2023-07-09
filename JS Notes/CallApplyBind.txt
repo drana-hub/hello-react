@@ -1,0 +1,61 @@
+Summary:
+________
+
+Function Borrowing: 
+-> call method is used to invoke a function directly
+-> apply does exctly the same as call method, only diff is , it takes the second arguments as arraylist
+
+-> each and every function in javascript has access to call, bind and apply method
+-> by using call method, we can use the method of one object on another object
+
+-> bind method is called exactly like the call method in terms of arguments, 
+but returns a copy of the function which can be invoked later rather than actually invoking it
+
+let name = {
+    firstName: 'Divyansh',
+    lastName: 'Rana',
+    printFullName: function (){
+        let firstName = 'Rony';
+        console.log(this.firstName + " " + this.lastName)
+        console.log(firstName + " " + this.lastName)
+        //console.log(firstName + " " + lastName)
+    }
+}
+
+-> name.printFullName()
+
+Result:
+-------
+// Divyansh Rana
+// Rony Rana
+// ReferenceError: lastName is not defined
+
+// with this keyword, it still prints Divyansh Rana , instead of Rony Rana
+// this keyword picksup the property of parent object only, not the prop of same func
+
+let printFullNameNew = function (hometown, state) {
+    console.log(this.firstName + " " + this.lastName + " from " + hometown + " in " + state);
+}
+
+printFullNameNew.call(name, "Rmu", "UP")
+
+//---------------------------------------------------------------------------------------
+
+
+let name2 = {
+    firstName: 'Sachin',
+    lastName: 'Tendulkar'
+}
+printFullNameNew.call(name2, "Mrt", "UP")
+
+printFullNameNew.apply(name, ["Rmu", "UP"])
+printFullNameNew.apply(name2, ["Mrt", "UP"])
+
+// Imp note: Call and apply method works the same, only difference is how we pass the arguments while calling this method
+// call and apply are predefined methods in js functions, as functions are the first class-objects in js
+
+// bind method
+let newMethod = printFullNameNew.bind(name2, "Mrt", "UP")
+console.log(newMethod);
+
+// bind returns a copy of the function which can be invoked later rather than directly invoking a function

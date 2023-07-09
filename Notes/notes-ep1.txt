@@ -1,3 +1,11 @@
+React:
+All the browsers have js engine in it, but they do not understand the react code
+
+CDN:
+a distributed network of servers located in various geographic locations around the world
+main purpose of a CDN is to deliver content to users with high performance and availability.
+
+
 -> npm: 
 manages pakages (but not exactly node package manager, 
 behind the scenes work as a node package manager)

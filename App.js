@@ -1,3 +1,7 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// const ReactDOM = require('react-dom')
+
 {/* <div id = 'par'>
     <h1> hey </h1>
     <h2> hello </h2>

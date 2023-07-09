@@ -1,0 +1,63 @@
+Scripting Languages:
+-> A scripting language is a programming language that is designed for scripting or automation tasks
+-> often used to write scripts, which are sets of instructions or commands that are executed sequentially.
+-> Scripting languages are typically interpreted rather than compiled, 
+which means that the code is executed directly without the need for a separate compilation step.
+
+Typescript: 
+It is designed to be compiled into JavaScript before execution.
+TypeScript's compiler transpiles TypeScript code into JavaScript code that can be executed by browsers or other JavaScript runtime environments.
+
+Web Page: 
+---------
+-> A web page is a document that can be either displayed in the browser window 
+or as the HTML source.
+
+DOM and Window:
+---------------
+
+One thing that should be very clear is
+You can only access the DOM once the document has finished loading
+This means for safety reasons, you should wrap your DOM accessing code in a window.onload function.
+Once the page is loaded, you can immediately start using the API for document and window elements that don’t exist in the html code
+The document represents the html markup text while the window represents the browser window that displays the html markup text.
+
+Document Object: 
+----------------
+
+* The DOM is not part of the JavaScript language, but is instead a Web API used to build websites.
+* The Document Object represents an HTML or XML document within a web browser.
+* provides properties and methods to manipulate and access the content of the document
+* such as adding or modifying elements, changing styles, handling events, etc.
+* In simple terms, it represents the web page itself.
+* In JavaScript, you can access the Document Object using the document global variable.
+// Accessing the document object
+console.log(document.title); // Prints the title of the web page
+
+
+DOM (Document Object Model):
+----------------------------
+-> The DOM (Document Object Model) is provided by the browser.
+-> programming interface for web documents.
+-> DOM is NOT a programming language, it’s merely an interface that connects your scripts to your document tree.
+-> represents the page so that programs can change the document structure, style, and content
+-> represents the document as nodes and objects; that way, programming languages can interact with the page.
+-> Web browsers implement the DOM specifications and provide a DOM API (Application Programming Interface) that allows JavaScript (or other scripting languages) to interact with the DOM.
+-> The Document Object Model is a programming interface for HTML and XML documents.
+-> It represents the structure of a document as a hierarchical tree-like structure
+-> each element, attribute, and text node is represented as an object.
+-> a standard specification that defines a platform-neutral model for representing the structure of a document.
+-> provides a set of rules and methods for accessing and manipulating the elements, attributes, and content of an HTML or XML document.
+-> Not a part of javascript (a tree-like structure)
+-> it is something which a browser construct for html and xml files
+-> In order to traverse the DOM tree, we need to be exposed to certain APIs
+
+DOM Tree: 
+-> The DOM Tree, also known as the DOM hierarchy or DOM structure, is a visual representation of the HTML or XML document as a hierarchical tree-like structure. 
+-> A tree of elements which is exposed to js via certain browser apis like document and window.
+-> actual result of parsing an HTML or XML document according to the DOM specifications.
+-> represents the structure of the document, where each element, attribute, and text node is represented as a node in the tree
+
+Window: (provided us by the browser, not by js)
+-> Document is a part of Window object
+-> document gives us the access to particular dom tree

@@ -1,0 +1,17 @@
+what is cloud computing?
+-> the practice of using network of remote servers on the internet 
+-> to store, manage and process data, rather than a local server or a personal computer.
+
+evolution of cloud hosting? 
+dedicated server -> virtual private server -> shared hosting -> cloud hosting
+
+what is amazon?
+-> an american multinational computer technology corporation headquartered in seattle
+
+what is amazon web service?
+sqs: simple queue service
+s3: simple storage service
+ec2: elastic compute cloud
+
+what is a cloud service provider?
+

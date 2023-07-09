@@ -1,0 +1,5 @@
+Q1 =  What is an object?
+
+An object is a collection of properties, 
+and a property is an association between a key and its value
+

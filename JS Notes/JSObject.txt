@@ -1,0 +1,88 @@
+Javascript Basics
+_________________
+
+* everything in javascript is an object
+* let p = {} -> Object literal
+* let p = new Object()
+* let p = Object.create({})
+
+$ Inheritence:
+___________
+
+* used for code reusabilty (properties and method of an existing class)
+* easy to update a class then updating all diff objects.
+
+ 
+-> In JS, it can be done with or without classes
+-> In JS, inheritance is done with help of objects,
+ especially protoypes. (Prototypal Inheritance)
+
+-> when we are creating a class, 
+underneath js is creating a function for us
+so classes are functions as well
+
+* functions are first-class objects in javascript
+* typeof(func) -> function
+
+-> there are 4 ways to create inheritance for a object:
+
+1. creating class (class extends anotherClass)
+2. creating functions
+3. creating with object
+// let me = Object.create(anotherObject)
+// let me = {}
+// Object.setProtoypeOf(me, anotherObject)
+
+
+$ Super Keyword in Javascript:
+___________________________
+
+* can be used for calling constructor and methods of parent class
+
+-> we use super keyword for using the constructor of the parent class
+
+-> we write super() in child class to call the constructor of parent class
+
+-> super is the reference to our parent class
+we can write super.hello() to call the method of our parent class
+
+
+$ Static Keyword in Javascript:
+_____________________________
+
+-> these properties neither can be passed on two children , 
+nor can be used in the instantiated objects.
+
+-> Only direct class can use them
+// class Animal{
+	static run(){}
+}
+// Animal.run()
+
+
+$ Prototypal Inheritence:
+________________________
+
+* It is a bit diff than classical Inheritence in Java/c++
+
+let obj = new Person()
+obj.__proto__ === Person.prototype
+
+obj.__proto__ === Object.prototype
+Object.prototype.__proto__ === null
+this is prototype chaining in js which ends at null
+
+-> so whenver undefined is returned, it means, 
+it has traveled the whole proto chain till the bottom and nothing is found
+
+* 'prototype' doesnt belong to any object or instance
+* it only belongs to constructor functions or classes
+-> Class is a syntactic sugar for construction function in js
+
+
+-> __proto__ is a property of every variable that's pointing to the parent object
+
+that's its inheriting from while prototype is the property of constructor function
+which contains all the stuff that will be inherited by its instance.
+
+-> let me={} is a shorthand for let me = new Object()

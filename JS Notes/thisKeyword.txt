@@ -1,0 +1,2 @@
+the use of 'use strict'; changes the behavior of how this is treated in the function
+if use strict is used , this is not equal to the global object, ie, in case of browser, the window object
