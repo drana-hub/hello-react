@@ -1,10 +1,3 @@
-React:
-All the browsers have js engine in it, but they do not understand the react code
-
-CDN:
-a distributed network of servers located in various geographic locations around the world
-main purpose of a CDN is to deliver content to users with high performance and availability.
-
 
 -> npm: 
 manages pakages (but not exactly node package manager, 
@@ -16,25 +9,24 @@ we create a package.json file for ourselves,
 this file is a configuration for our npm, it mantains the version of our dependencies
 
 -> packages:
-
-* bundler:
-the most imp package in our app is a bundler eg: webpack, parcel
-it cleans, minifies, optimizes and packages our code so that it can be sent to prod
-create-react-app behind the scene uses webpack and maven
-
-* parcel :
-it will give so much power to our app, it can host our app on server
-
 * package.json:
 this file is a configuration for npm to keep track which version of package is installed in our app
-it has caret ^ (which automatically upgrades to another version)
-it has tilde ~ before dependencies which upgrade to another major version
-keeps an approx version of the package with caret or tilde
+it has caret ^ (which automatically upgrades to another version, any minor upgrade)
+it has tilde ~ before dependencies (which upgrade to another major version, a major upgrade can break lot of things)
+if we don't use any of this, we will always get the same exact version mentioned in package.json
+
+keeps an approx version of the package with caret or tilde, 
+while package.lock.json keeps the exact version of the package installed
 
 
 * package-lock.json: very very imp file
 keeps a track of all the exact versions of a package used in our app, i.e, versions of transitive dependencies too.
-integrity key in it keeps a track of the version in our dev with the version in the prod env
+
+INTEGRITY key: 
+it is a sha-512 hash
+it keeps a track of the version in our dev with the version in the prod env
+resolves problem like working on my local, breaks on production 
+
 Including the package-lock.json file in your Git repository provides a consistent and reliable development environment across 
 different machines and ensures that everyone working on the project is using the same versions of the dependencies. 
 It promotes reproducibility, collaboration, and helps maintain the stability and security of your project.
@@ -44,14 +36,18 @@ it contains all the code fetched from npm for our dependencies (kind of a db whi
 in all the projects, node module is very heavy
 transitive dependencies - when one dependency has other dependencies in its package.json
 hence, it is a collection of dependencies
-so should we push all this large node module code to prod or git?
-with package and lock, same node modules can be gnerated again, hence both needs to go on git
+
+
+Q- so should we push all this large node module code to prod or git?
+with package and lock, same node modules can be gnerated again
+hence it's imp to put both package and package-lock on git
+whatever we can regenerate, we do not take it on git
 
 
 * dependencies: 
-dev dependency( -D, used only while devwlopment), normal dependency(used in production code also)
+dev dependency( -D, used only while devwlopment), npm install -D 
+normal dependency(used in production code also)
 so parcel is required only as a dev dependency
 
 Q. How would npm knows that parcel has its own dependencies and how many package.json a project has? 
 -> bcz parcel has its own dependencies in its package.json and all dependencies might have other dependencies.
-
