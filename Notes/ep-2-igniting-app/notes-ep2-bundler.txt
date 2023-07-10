@@ -1,6 +1,34 @@
--> npx parcel index.html
-
+* npx:
 npx: means executing a package
+NPX comes bundled with NPM version 5.2+
+major advantage of npx is the ability to execute a package 
+which wasn't previously installed: like npx create-react-app
+
+-> npx parcel index.html
+it has created a server for us and hosted our app on localhost:1234
+when we use npx parcel , it generates the dev build and put it in dist folder
+.parcel-cache and dist folder are automatically generated while making the build
+
+
+->npx parcel build index.html
+prod builds take slighly more time as they require more Optimization
+prod build is highly optimized
+
+
+# Parcel
+- Dev Build (Builds different bundles for dev and prod)
+- Local Server
+- HMR: Hot Module replacement with File watching algorithm in c++
+- Caching (Faster Buils)
+- Image Optimization
+- Minfication
+- Bundling
+- Compressing
+- Consistent Hashing
+- Code Splittting
+- Differential Bundling (So that app runs smoothly on older browsers)
+- Diagnostic
+- Tree Shaking (Remove unused code for us/unused functions)
 
 * bundler:
 the most imp package in our app is a bundler eg: webpack, parcel, veet
@@ -17,4 +45,11 @@ parcel uses babel
 Babel is a free and open-source JavaScript transcompiler that is mainly used 
 to convert ECMAScript 2015+ code into backwards-compatible JavaScript code 
 that can be run by older JavaScript engines
+
+* HMR: Hot Module Replacement
+Parcel does hot module replacement with the help of file watching algorithm - written in c++
+It caches things for us to go us faster builds
+
+
+
 

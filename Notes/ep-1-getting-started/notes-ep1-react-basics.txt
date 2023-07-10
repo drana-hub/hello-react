@@ -4,6 +4,9 @@ All the browsers have js engine in it, but they do not understand the react code
 CDN:
 a distributed network of servers located in various geographic locations around the world
 main purpose of a CDN is to deliver content to users with high performance and availability.
+getting react from cdn is not a good way 
+as it makes a network call and make our app launching slower
+using it via package.json is preferred as it will take care of the version too
 
 
 
