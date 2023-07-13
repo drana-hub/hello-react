@@ -1,0 +1,71 @@
+
+---------------------------------------- jsx ---------------------------------------------
+-> jsx makes our life easy as we dont have to write React.createElement again and again
+-> and we can write html-like syntax in our react components
+react and jsx are very different, we can make whole react applications without using jsx also
+jsx is a convention where we kind of merge the syntax of html and js together
+jsx is not html inside javascript
+jsx is a "html-like" syntax
+const jsxHeading = <h1>Namaste from JSX</h1>, when this piece of code is transplied/compiled by Babel, 
+this jsxHeading, it becomes a react element, the object
+
+a good library or framework is that which makes dev lives easy, 
+so react engineers realised this and built jsx, jsx is not react
+jsx looks much cleaner than react.createElement
+
+Q - Is JSX a valid js?
+valid js is something which js engine understands, js engine cannot understand jsx as its not valid js
+
+Q- Can js engine understand jsx ? No, JS engine understands ecmascript(E6,E5....)
+
+this JSX => (transpiled) => React.createElement => Js object => HTML element
+
+for giving attributes in jsx, we have to do in camelcase, className gets converted to class
+
+Note: here heading and jsxHeading are one and the same thing
+const heading = React.createElement(
+    "h1",
+    { id: "heading", className: 'root'},
+    "Namaste Bhai log"
+);
+
+var jsxHeading = <h1 id="heading" className='root'>Namaste from JSX</h1>
+-> for using multiple lines 
+
+jsx element has "_source" property with some value while normal heading element has _source: null"
+
+// for multiple lines jsx , 
+we need to use() so that babel can understand from where to where jsx is
+var jsxHeading = (
+  <h1 id="heading" className="root">
+    Namaste from JSX
+  </h1>
+);
+
+
+Inside jsx, {} , in this block you can write any js code inside it
+writing js inside jsx is very powerful
+
+-> jsx can only have single parent on the root
+-> (
+    we can write jsx inside it
+)
+->jsx is like a tree and a tree can only have one root
+
+React Fragments:  they are there so that they can wrap up the elements
+they behave like the empty tags
+=> for replacing this , React actually created <></> (shorthand for React.Fragment) empty tags for us
+=> this is actually the shortcut for React.Fragment
+(
+    <React.Fragment> or <>
+    <div>
+    </div>
+    <div>
+    </div>
+    </React.Fragment> or </>
+)
+
+Note:
+Our code is readable because we are writing jsx, jsx is not react
+
+

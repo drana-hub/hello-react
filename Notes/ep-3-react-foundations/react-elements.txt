@@ -1,0 +1,47 @@
+* React Element: Not a html element, it is actually an object
+React Element => Object => everything in js is an object
+const heading = React.createElement(
+    "h1",
+    { id: "heading" },
+    "Namaste Bhai log"
+);
+core react will create this element
+when react was built, 
+react devs realized it was not a very dev friendly syntax to create browser elements
+
+* Root: 
+-> root is also an object in itself
+first we create root, the entry point of our react application
+const root = ReactDOM.createRoot(document.getElementById("root"));
+we provide an object to root.render
+
+
+* root.render(heading);
+when we render this object on DOM it becomes an html element
+so this js object is rendered as an html element
+whatever which happens in react will happen inside this root
+
+* ReactDOM
+we need ReactDOM for displaying the elements on browser
+
+
+
+{
+  /* <div id = 'par'>
+    <h1> hey </h1>
+    <h2> hello </h2>
+</div> */
+}
+
+ const h = React.createElement("div", { id: 'par' },
+     [React.createElement("h1", { key: 'sa' }, 'Hello from React!'),
+     React.createElement("h2", { key: 'ye' }, 'heya')]
+ );
+ console.log(h)
+
+
+
+
+
+
+

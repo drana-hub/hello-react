@@ -1,18 +1,16 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// const ReactDOM = require('react-dom')
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-{/* <div id = 'par'>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(root);
+
+const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+
+const title = (
     <h1> hey </h1>
-    <h2> hello </h2>
-</div> */}
+)
 
+const title2 = <div>hiiii</div>
 
-const h = React.createElement("div", { id: 'par' },
-    [React.createElement("h1", { key: 'sa' }, 'Hello from React!'),
-    React.createElement("h2", { key: 'ye' }, 'heya')]
-);
-console.log(h)
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(h);
+root.render(title)
+root2.render(title2)

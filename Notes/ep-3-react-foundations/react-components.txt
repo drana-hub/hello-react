@@ -1,0 +1,126 @@
+React Components
+What is a react functional component?
+a normal js functions which returns some jsx or react element
+jsx gets converted to a react element
+
+
+
+root.render aceepts only react element
+root.render(jsxHeading);
+so <HeadingComponent /> makes a react element (object) of HeadingComponent which is itself a function
+<HeadingComponent /> this is a way of executing headingComp function which returns us an element(jsx)
+
+Q- How can we put react element inside a component?
+
+
+
+
+Q- What is a component? 
+-> a piece of code that is reusable, represented by capital letterd
+
+Q- Is everything a component in react? true
+
+Q- What is the difference between react element and components?
+
+* React Components: 
+Class-based
+
+
+
+
+
+
+
+-> all three components mean the same thing
+const HeadingComponent = () => <h1>I am the component</h1>;
+const HeadingComponent1 = function () {
+  return <h2>heya</h2>;
+};
+const HeadingComponent13 = function abc() {
+    return React.createElement(
+        "h1",
+        { id: "heading" },
+        "Namaste Bhai log"
+      );
+};
+
+
+
+const HeadingComponent = () => <h1>I am the component</h1>;
+const Title = () => <h1>I am the title</h1>;
+
+// here heading component 1 and 2 are exactly same
+const HeadingComponent1 = function () {
+  return (
+    <>
+     {/* this is known as Component Composition */}
+      
+      <Title />
+      <Title></Title> can be written like this as well
+      {Title()}
+      
+      // html does not even know that there is even any Title inside code
+      // it gets converted to html when React dom renders this object
+      <h2>heya</h2>
+      <h3>hero</h3>
+    </>
+  );
+};
+const HeadingComponent2 = () => (
+  <>
+    <h2>heya</h2>
+    <h3>yohoo</h3>
+  </>
+);
+
+
+
+const HeadingComponent = () => <h1>I am the component</h1>;
+const Title = () => <h1>I am the title</h1>;
+
+// here heading component 1 and 2 are exactly same
+const HeadingComponent1 = function () {
+  return (
+    <>
+     {/* this is known as Component Composition */}
+      <Title />
+      <h2>heya</h2>
+      <h3>hero</h3>
+    </>
+  );
+};
+const HeadingComponent2 = () => (
+  <>
+    <h2>heya</h2>
+    <h3>yohoo</h3>
+  </>
+);
+const HeadingComponent3 = () => <h2>hey</h2>;
+
+const HeadingComponent4 = function abc() {
+  return React.createElement("h1", { id: "heading" }, "Namaste Bhai log");
+};
+
+const HeadingComponent5 = function abc() {
+  return heading;
+};
+
+var jsxHeading = (
+  <>
+    <HeadingComponent />
+    <HeadingComponent1 />
+    <HeadingComponent2 />
+    <HeadingComponent3 />
+    <HeadingComponent4 />
+    <HeadingComponent5 />
+  </>
+
+  // <h1 id="heading" className="root">
+  //   Namaste from JSX
+  // </h1>
+);
+
+console.log(jsxHeading, "aaaaa");
+console.log(HeadingComponent, "bbbb");
+console.log(<HeadingComponent />, "ccccc");
+root.render(<HeadingComponent1 />);

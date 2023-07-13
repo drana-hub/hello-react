@@ -1,0 +1,18 @@
+injection attacks:
+
+if we can execute js in your browser, 
+then we will have access to cookies, session storage, local storage
+can read your cookies
+
+const data = await api.get()
+
+const HeadingComponent2 = () => (
+  <>
+    // jsx takes care of injection attacks
+    // js will not blindly run it, it prevenets cross-scripting attacks
+    // it sanitizes the code inside {} before executing in js
+    {data}
+    <h2>heya</h2>
+    <h3>yohoo</h3>
+  </>
+);

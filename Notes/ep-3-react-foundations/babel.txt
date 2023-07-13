@@ -1,0 +1,35 @@
+
+
+---------------------------------- Babel -------------------------------------
+
+parcel underneath uses babel (its kinda manager of babel)
+babel takes our jsx and coverts it into code which react and our browser will understand
+babel's job is to transpile or convert jsx code into react code
+
+JSX => React.createElement
+Babel was not created by facebook
+
+var jsxHeading = <h1 id="heading">Namaste from JSX</h1>
+so this code is transpiled before it goes to the js engine
+js engine receives the code that browsers can understand
+even reactDom also does not understand jsx, so first it is transpiled (i.e, converted to js which browsers can understand)
+transpiling is done by parcel, it does not do it itslef, it gives the responsibility to babel
+
+-> Babel is a javascript compiler (transpiler)
+Babel's primary role is to convert code written in newer versions of JavaScript (ES6, ES7, etc.) 
+into older versions (ES5 or even ES3) that can run in environments 
+that may not have full support for the latest language features
+This process is known as "transpiling" or "source-to-source compilation.
+Babel does not convert JavaScript code into machine code like traditional compilers do
+it still performs a transformation step on the source code, making it compatible with different environments
+Therefore, it is commonly referred to as a "compiler" in the JavaScript ecosystem.
+
+
+Story of Babel 
+ Babel started supporting a plugin called "babel-plugin-transform-react-jsx" 
+(commonly known as JSX transform) to convert JSX syntax into React.createElement().
+
+As React gained popularity, JSX support became essential in many JavaScript projects. 
+Babel's JSX transform plugin became widely used and eventually got integrated into the core of Babel.
+
+

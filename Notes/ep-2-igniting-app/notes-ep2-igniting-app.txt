@@ -10,3 +10,10 @@ react:
 a javascript package(code) hosted on cdn links as well as npm  also
 we dont want to make a network call to cdn link
 
+browserslist:
+we can add that in our package.json to specify which browsers should support our app
+
+running scripts:
+npm run start -> npm start (both are same, start is a keyword reserved by npm)
+npm run build
+
