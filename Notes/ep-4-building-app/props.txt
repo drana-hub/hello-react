@@ -1,0 +1,26 @@
+Props: short-form of property
+-> If we want to pass data dynamically to a component , we can pass it via props
+-> they are just normal arguments to a function
+-> passing props is just like passing argumnets to a function
+
+-> when we build production-ready apps, we have to write production ready app
+
+-> not using keys (not acceptable)
+
+Q- Why is Key required as a prop?
+-> bcz if all the alike components get the unique id, 
+-> if there will be a unique key, react will only re-render that particular part instead of all the components
+-> it's a huge optimization in react
+
+React index as key:
+-> its okay to use index as a key but not recommended
+-> React does not recommend using index as a key
+
+Syntactic Sugar: 
+{[<ResCard key={2} resName={2} />]}
+{<ResCard key={2} resName={2} />}
+
+Both the above lines render the same thing as
+JSX allows direct rendering of components without an enclosing array or fragment
+
+Q- why index as a key is not recommended?

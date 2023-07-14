@@ -1,0 +1,14 @@
+Q1- Why height property is not working inside this class? or 
+why am I not able to change the height of this image?
+
+.logo {
+    width: 10%;
+}
+
+<img className="logo" 
+src="https://img.freepik.com/free-photo/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.jpg?w=1060&t=st=1689250853~exp=1689251453~hmac=52fcaff8c56764a745b478631ea7793678b8f73eea4bab9c7f71d6e257068f73"
+style={{width: '10%'}}
+/>
+
+Q2- Why is this inline styling not working in react?
+-> inline styling is always given priority over className

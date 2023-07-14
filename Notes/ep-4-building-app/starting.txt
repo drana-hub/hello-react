@@ -1,0 +1,38 @@
+Q- Why React?
+Everything react does can be done by normal HTML, Css, JS
+the beauty of using a library or a framework is that it makes a developer's experience easy
+it makes us write less code and do more on the web page
+
+
+
+Planning: 
+
+When you are asked to build a app, first thing you should be goot at is planning
+when planning is good, code is very easy to write
+you should exactly what you are going to build, 
+so the first thing comes as as Wireframe or UI Design or mock
+
+
+/*
+-Header
+    -Logo
+    -Nav bar
+        -Home
+        -About Us
+        -Contact Us
+        -Cart Logo
+-Body
+    - Search Bar
+    - Card Container
+        -Cards
+            -Image
+            -Address
+            -Ratings
+-Footer
+    - Copyright Links
+    - Contact Us
+*/
+
+Namaste Food: 
+
+

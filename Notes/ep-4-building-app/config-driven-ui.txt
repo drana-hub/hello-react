@@ -1,0 +1,4 @@
+Our website is driven by data (configs)
+-> when data differs, our layout differs
+
+our ui is driven by config where data is the config
