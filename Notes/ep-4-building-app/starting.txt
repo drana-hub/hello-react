@@ -33,6 +33,7 @@ so the first thing comes as as Wireframe or UI Design or mock
     - Contact Us
 */
 
-Namaste Food: 
+React does not recommend us any specific project structure
+Make a seperate file for all components
 
 

@@ -1,0 +1,6 @@
+-> 2 types of exports imports:
+1. default exports
+2. named exports
+
+You can have multiple named exports per module but only one default export.
+named exports are imported via {Destructuring}, default exports can be imported without destructuring

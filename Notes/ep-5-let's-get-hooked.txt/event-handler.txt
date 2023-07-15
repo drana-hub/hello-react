@@ -1,0 +1,5 @@
+const abc = () => {
+    console.log('nsnfsn')
+}
+// onClick has to be equal to function , which gets executed on this event        
+<button className="filter-btn" onClick={abc} onMouseOver={()=> console.log('hovering')}>Top Rated Restaurants</button>
