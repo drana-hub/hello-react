@@ -1,0 +1,20 @@
+Reconciliation Algorithm / React Fiber:
+-> this new algorithm came out in React 16 and since then it is known as react Fiber
+
+React creates a 
+virtual DOM of the UI (an representation of actual DOM)
+
+Since all { re = React.createElements() } react elemets are objects
+All objects in these are called Virtual DOMS
+
+So Virtual DOM is an object representation of the actual DOM
+
+
+DOM is like a tree
+
+
+----------------------------------------------------------------------------------------
+
+Diff Algorithm:
+It finds out the difference between two virtual DOMs 
+(the updated virtual dom and the previous virtual dom)

@@ -1,0 +1,41 @@
+react is fast/ efficient in Dom-manipulation
+if we have to keep our data and UI layer consistent to each other, that is where all frameworks come in picture
+if my data changes, my Ui should update accordingnly
+so react is fast bcz it can do faster/efficient DOM manipulation
+virtual Dom - diff algorithm - reconciliation
+
+to bind the data to the UI, react gives us superpower
+
+
+2 very imp hooks - useState, useEffect (99%)
+useState gives super powerful state variables in react
+it is a named import from react
+it is used to create a state variable, i.e, a variable which can handle state of our app
+
+
+superpowerful variable, i.e, a state variable in react
+  to create a state variable , we use hooks in react, i.e, useState hook
+
+  useState(defaultVAlue) of the state variable
+  since the way of creating a state variable is a different,
+  way of modifing it will also be different
+  set function is not mandatory to be given
+
+
+-------------------------------------------------------------------------------------------------
+Most Important concept
+Note: whenever a state variable updates, react re-renders the components
+this is the power of react
+
+Q- What are hooks in react?
+-> a hook is a normal js function given to us by react
+-> that function is a utility function written by fb developers
+
+By efficiently updating only the necessary parts of the UI, 
+React provides a performance optimization, 
+ensuring that the user interface remains responsive and avoids unnecessary re-renders and updates.
+
+This is why react is most popular library for building UI applications
+-> React makes this DOM operation super-fast and efficient
+-> the logic of re-rendering the component is what makes react super-fast as soon as any of the state variable changes
+

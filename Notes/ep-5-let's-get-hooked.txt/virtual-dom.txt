@@ -1,0 +1,29 @@
+Diffing Algorithm:
+-> Finding out the diference b/w 2 HTML nodes is tough
+-> but finding out the diff b/w 2 js objects is fast
+
+
+Virtual Dom: the object representation of this dom tree
+React does not touch the actual DOM a lot
+i.e. why react is fast
+whenever there is any change in state variable
+
+
+React application has one virtual DOM tree that represents the entire UI, 
+and each component in the application corresponds to a subtree within that virtual DOM tree.
+
+
+* Incremental rendering
+
+Q- why is react fast?
+bcz it is doing efficient dom manipulation with the help of diff algorithm
+react keeps an eye on state variables (constantly checking them )
+
+Virtual Dom as a concept existed long before react (JS representation of HTML DOM Tree )
+but react used it first
+
+
+----------------------------------------------------------------
+
+Must read:
+https://github.com/acdlite/react-fiber-architecture

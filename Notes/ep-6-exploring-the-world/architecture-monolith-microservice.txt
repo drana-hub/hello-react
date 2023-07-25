@@ -1,0 +1,20 @@
+Monolith: 
+-> we used to have a huge big project
+-> this project have apis, ui, authentication, db connection, messaging logic
+-> so even if a single minor change was done, the whole project needed to be deployed again
+
+Microservice Architecture: 
+(Seperation of concerns / Single Responsibility Principle)
+(where each service has its own job)
+
+-> we have different services for different jobs
+* backend apis
+* UI services
+* notification project
+* authentication
+
+-> we can have different services written in different tech stack
+-> all big companies have multiple techstack
+-> all ms are deployed on different ports
+
+-> how do these services interact with each other?
